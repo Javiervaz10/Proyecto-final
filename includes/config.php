@@ -1,5 +1,5 @@
 <?php
-$host = 'mydemoserver.mysql.database.azure.com';
+$host = 'proyecto-final-db.mysql.database.azure.com';
 $username = 'u20051268';
 $password = 'userL20051268-';
 $db_name = 'industria';
