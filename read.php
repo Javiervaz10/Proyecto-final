@@ -40,9 +40,7 @@
                             <td>{$row['apellido_materno']}</td>
                             <td>{$row['puesto']}</td>
                             <td>{$row['dias_trabajo']}</td>
-                            <td>{$row['horas_trabajo']}</td>
-                            <td>{$row['hora_entrada']}</td>
-                            <td>{$row['hora_salida']}</td>
+                            <td>{$row['horas_trabajo']}</td>    
                             <td>{$row['dias_vacaciones']}</td>
                         </tr>";
                     }
