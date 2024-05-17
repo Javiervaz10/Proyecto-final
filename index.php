@@ -32,13 +32,6 @@
             <label for="horas_trabajo">Horas de Trabajo (al día):</label>
             <input type="number" id="horas_trabajo" name="horas_trabajo" required oninput="validarNumero(this, 24); calcularHoraSalida()">
             
-            <label for="hora_entrada">Hora de Entrada (hh:mm):</label>
-            <input type="time" id="hora_entrada" name="hora_entrada" required oninput="calcularHoraSalida()">
-            
-            <label for="hora_salida">Hora de Salida (hh:mm):</label>
-            <input type="number" id="horas_trabajo" name="horas_trabajo" required oninput="validarNumero(this, 24); calcularHoraSalida()">
-
-            
             <label for="dias_vacaciones">Días de Vacaciones:</label>
             <input type="number" id="dias_vacaciones" name="dias_vacaciones" required oninput="validarNumero(this, 24)">
             
