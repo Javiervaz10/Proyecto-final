@@ -3,7 +3,7 @@ $host = 'proyecto-final-db.mysql.database.azure.com';
 $username = 'MySql';
 $password = 'userL20051268-';
 $db_name = 'industria';
-$ssl_cert_path = 'C:\Users\fvale\Downloads\Microsoft RSA Root Certificate Authority 2017.crt'; // Ajusta esta ruta al certificado CA
+$ssl_cert_path = 'ssl/Microsoft RSA Root Certificate Authority 2017.crt'; // Ajusta esta ruta al certificado CA
 
 // Establecer la conexión
 $con = mysqli_init();
