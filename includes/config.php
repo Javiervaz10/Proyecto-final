@@ -1,17 +1,34 @@
 <?php
-/*$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "industria";
-*/
-$con = mysqli_init();
-mysqli_ssl_set($con,NULL,NULL, "{path to CA cert}", NULL, NULL);
-mysqli_real_connect($conn, "proyecto-final-db.mysql.database.azure.com", "u20051268", "{userL20051268-}", "{industria}", 3306, MYSQLI_CLIENT_SSL);
-// Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
+$host = 'mydemoserver.mysql.database.azure.com';
+$username = 'u20051268';
+$password = 'userL20051268-';
+$db_name = 'industria';
 
-// Verificar conexión
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+//Establishes the connection
+$conn = mysqli_init();
+mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306);
+if (mysqli_connect_errno($conn)) {
+die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
+
+// Run the create table query
+if (mysqli_query($conn, '
+CREATE TABLE empleados (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    apellido_paterno VARCHAR(50) NOT NULL,
+    apellido_materno VARCHAR(50) NOT NULL,
+    puesto VARCHAR(100) NOT NULL,
+    dias_trabajo INT NOT NULL,
+    horas_trabajo INT NOT NULL,
+    hora_entrada TIME NOT NULL,
+    hora_salida TIME NOT NULL,
+    dias_vacaciones INT NOT NULL
+);
+')) {
+printf("Table created\n");
+}
+
+//Close the connection
+mysqli_close($conn);
 ?>
