@@ -21,8 +21,6 @@
                     <th>Puesto</th>
                     <th>Días de Trabajo</th>
                     <th>Horas de Trabajo</th>
-                    <th>Hora de Entrada</th>
-                    <th>Hora de Salida</th>
                     <th>Días de Vacaciones</th>
                 </tr>
             </thead>
