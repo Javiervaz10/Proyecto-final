@@ -1,10 +1,3 @@
-/*
-    hostname=proyecto-final-db.mysql.database.azure.com
-    username=MySql    
-    password={your-password}
-    ssl-mode=require
-*/
-
 <?php
 $host = 'proyecto-final-db.mysql.database.azure.com';
 $username = 'MySql';
