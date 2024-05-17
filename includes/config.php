@@ -1,6 +1,6 @@
 <?php
 $host = 'proyecto-final-db.mysql.database.azure.com';
-$username = 'u20051268';
+$username = 'MySql';
 $password = 'userL20051268-';
 $db_name = 'industria';
 
