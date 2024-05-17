@@ -15,25 +15,25 @@
         <h2>Registro de Empleados</h2>
         <form id="registroForm" action="create.php" method="post">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required oninput="validarTexto(this)">
+            <input type="text" id="nombre" name="nombre">
             
             <label for="apellido_paterno">Apellido Paterno:</label>
-            <input type="text" id="apellido_paterno" name="apellido_paterno" required oninput="validarTexto(this)">
+            <input type="text" id="apellido_paterno" name="apellido_paterno">
             
             <label for="apellido_materno">Apellido Materno:</label>
-            <input type="text" id="apellido_materno" name="apellido_materno" required oninput="validarTexto(this)">
+            <input type="text" id="apellido_materno" name="apellido_materno">
             
             <label for="puesto">Puesto:</label>
-            <input type="text" id="puesto" name="puesto" required oninput="validarTexto(this)">
+            <input type="text" id="puesto" name="puesto">
             
             <label for="dias_trabajo">Días de Trabajo (a la semana):</label>
-            <input type="number" id="dias_trabajo" name="dias_trabajo" required oninput="validarNumero(this, 7)">
+            <input type="number" id="dias_trabajo" name="dias_trabajo">
             
             <label for="horas_trabajo">Horas de Trabajo (al día):</label>
-            <input type="number" id="horas_trabajo" name="horas_trabajo" required oninput="validarNumero(this, 24); calcularHoraSalida()">
+            <input type="number" id="horas_trabajo" name="horas_trabajo">
             
             <label for="dias_vacaciones">Días de Vacaciones:</label>
-            <input type="number" id="dias_vacaciones" name="dias_vacaciones" required oninput="validarNumero(this, 24)">
+            <input type="number" id="dias_vacaciones" name="dias_vacaciones">
             
             <button type="submit">Registrar</button>
         </form>
