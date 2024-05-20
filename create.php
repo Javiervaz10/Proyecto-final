@@ -10,7 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $horas_trabajo = $_POST['horas_trabajo'];
     $dias_vacaciones = $_POST['dias_vacaciones'];
 
-    $sql = "INSERT INTO empleados (nombre, apellido_paterno, apellido_materno, puesto, dias_trabajo, horas_trabajo, dias_vacaciones) VALUES ('$nombre', '$apellido_paterno', '$apellido_materno', '$puesto', '$dias_trabajo', '$horas_trabajo', '$dias_vacaciones')";
+    $sql = "INSERT INTO empleados (nombre, apellido_paterno, apellido_materno, puesto, dias_trabajo, horas_trabajo, dias_vacaciones)
+            VALUES ('$nombre', '$apellido_paterno', '$apellido_materno', '$puesto', '$dias_trabajo', '$horas_trabajo', '$dias_vacaciones')";
 
     if ($conn->query($sql) === TRUE) {
         header('Location: index.php');
