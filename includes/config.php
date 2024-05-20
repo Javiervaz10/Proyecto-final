@@ -1,24 +1,14 @@
 <?php
-$host = 'proyecto-final-db.mysql.database.azure.com';
-$username = 'MySql';
-$password = 'userL20051268-';
-$db_name = 'industria';
-$ssl_cert_path = 'ssl/Microsoft RSA Root Certificate Authority 2017.crt'; // Ajusta esta ruta al certificado CA
+$servername = "empleados-db.mysql.database.azure.com";
+$username = "u20051268";
+$password = "userL20051268";
+$dbname = "industria";
 
-// Establecer la conexión
-$con = mysqli_init();
-mysqli_ssl_set($con, NULL, NULL, $ssl_cert_path, NULL, NULL);
-mysqli_real_connect($con, $host, $username, $password, $db_name, 3306, NULL, MYSQLI_CLIENT_SSL);
+// Crear la conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar la conexión
-if (mysqli_connect_errno($con)) {
-    die('Failed to connect to MySQL: ' . mysqli_connect_error());
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
 }
-
-echo "Connected successfully";
-
-// Aquí puedes realizar tus consultas
-
-// Cerrar la conexión
-mysqli_close($con);
 ?>
