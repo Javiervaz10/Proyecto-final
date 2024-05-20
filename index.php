@@ -15,25 +15,25 @@
         <h2>Registro de Empleados</h2>
         <form id="registroForm" action="create.php" method="post">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
+            <input type="text" id="nombre" name="nombre" required>
             
             <label for="apellido_paterno">Apellido Paterno:</label>
-            <input type="text" id="apellido_paterno" name="apellido_paterno">
+            <input type="text" id="apellido_paterno" name="apellido_paterno" required>
             
             <label for="apellido_materno">Apellido Materno:</label>
-            <input type="text" id="apellido_materno" name="apellido_materno">
+            <input type="text" id="apellido_materno" name="apellido_materno" required>
             
             <label for="puesto">Puesto:</label>
-            <input type="text" id="puesto" name="puesto">
+            <input type="text" id="puesto" name="puesto" required>
             
             <label for="dias_trabajo">Días de Trabajo (a la semana):</label>
-            <input type="number" id="dias_trabajo" name="dias_trabajo">
+            <input type="number" id="dias_trabajo" name="dias_trabajo" required>
             
             <label for="horas_trabajo">Horas de Trabajo (al día):</label>
-            <input type="number" id="horas_trabajo" name="horas_trabajo">
+            <input type="number" id="horas_trabajo" name="horas_trabajo" required>
             
             <label for="dias_vacaciones">Días de Vacaciones:</label>
-            <input type="number" id="dias_vacaciones" name="dias_vacaciones">
+            <input type="number" id="dias_vacaciones" name="dias_vacaciones" required>
             
             <button type="submit">Registrar</button>
         </form>
