@@ -1,5 +1,5 @@
 <?php
-$servername = "empresa-form.privatelink.azurewebsites.net.";
+$servername = "empresa-form.scm.privatelink.azurewebsites.net.";
 $username = "u20051268";
 $password = "userL20051268";
 $dbname = "industria";
